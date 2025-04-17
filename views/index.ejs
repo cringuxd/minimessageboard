@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Home Page</title>
+    </head>
+    <body>
+        <div>
+            <a href="./new">New Message</a>
+        </div>
+        <ul>
+            <% for(let i = 0; i < messages.length; i++) { %> 
+                User: <%= messages[i].user %>
+                <li>Message: <%= messages[i].text %> </li>
+                <li> <%= messages[i].added %> </li>
+            <% } %>
+        </ul>
+    </body>
+</html>
